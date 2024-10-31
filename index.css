@@ -1,0 +1,78 @@
+:root{
+    --primary: #FAF7F0;
+    --secondary: #D8D2C2;
+    --highlight: #B17457;
+    --text: #4A4947;
+}
+body {
+    all: unset;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary);
+    justify-content: flex-end;
+}
+
+.side-bar-cont {
+    height: 98vh;
+    width: 4%;
+    background-color: var(--highlight);
+    position: absolute;
+    display: flex;
+    top: 1vh;
+    left: 0.5vw;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.side-bar-cont:hover {
+    background-color: var(--highlight);
+    width: 15%;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.homepage-cont {
+    width: 93%;
+    height: 98vh;
+    position: absolute;
+    top: 1vh;
+    right: 1.5%;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.birthday-cont, .celebrant-name-cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: var(--text);
+}
+.birthday-cont {
+    font-size: clamp(2rem, 14vw, 7rem);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.celebrant-name-cont {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:clamp(2rem, 14vw, 5rem);
+}
+
+@media (min-width: 360px) and (min-height: 800px) and (orientation: portrait) {
+    body {
+        background-color: brown;
+    }
+    .birthday-cont, .celebrant-name-cont {
+        justify-content: center;
+    }
+}
