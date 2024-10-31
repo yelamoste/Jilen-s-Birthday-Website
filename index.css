@@ -26,12 +26,23 @@ body {
     left: 0.5vw;
     border-radius: 10px;
     z-index: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .side-bar-cont:hover {
     background-color: var(--highlight);
     width: 15%;
     transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+button {
+    all: unset;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    display: flex;
 }
 
 .homepage-cont {
