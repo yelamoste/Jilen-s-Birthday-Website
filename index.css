@@ -45,6 +45,11 @@ button {
     color: var(--primary);
     display: flex;
 }
+.sb-cont img {
+    width: 25px;
+    height: auto;
+    margin: 13px;
+}
 
 .homepage-cont {
     width: 93%;
